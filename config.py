@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7131604616:AAHoeBSUIskPpRoZJ9cuQve890A0ewJlVCo")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7472971918:AAFSxJmkrmdpf6eMYgkzRRmo9pXh68HmN5M")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26730559"))
@@ -19,13 +19,13 @@ APP_ID = int(os.environ.get("APP_ID", "26730559"))
 API_HASH = os.environ.get("API_HASH", "54e0fd326f54b4ea91fdcbdf98e3cf4e")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002126368591"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002031505571"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "@Arabnihnge")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6740437351"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "2073762128"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
@@ -35,16 +35,16 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://emakbot:fadhil123@cluster
 DB_NAME = os.environ.get("DATABASE_NAME", "emakbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001605417070"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", ""))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001563224703"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002157839256"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
 try:
-    ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "5115691197 6273945163 6103092779 5231212075").split()):
+    ADMINS=[2073762128]
+    for x in (os.environ.get("ADMINS", "2073762128").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
