@@ -1,5 +1,3 @@
-#(©)AnimeXyz
-
 from aiohttp import web
 from plugins import web_server
 
@@ -92,9 +90,8 @@ class Bot(Client):
                               
                                           """)
         self.username = usr_bot_me.username
-        await start()
 
     async def stop(self, *args):
         await super().stop()
         self.LOGGER(__name__).info("Bot stopped.")
-            
+
