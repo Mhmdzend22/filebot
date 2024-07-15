@@ -92,10 +92,7 @@ class Bot(Client):
                               
                                           """)
         self.username = usr_bot_me.username
-        #web-response
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        await web.TCPSite(app, bind_address,).start()
+        await start()
 
     async def stop(self, *args):
         await super().stop()
