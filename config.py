@@ -10,33 +10,33 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6973777409:AAFMXAPDxRmdXvRBEtOkOyIaUlTQqEdGM30 ")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "26730559"))
+APP_ID = int(os.environ.get("APP_ID", "24213496"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "54e0fd326f54b4ea91fdcbdf98e3cf4e")
+API_HASH = os.environ.get("API_HASH", "460587b3c127073be75378abec90ff56")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002035889639"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "@bapakkaosalto")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "0"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "11754780"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongo")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madara:madara@cluster0.xqkrlic.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "xinoubot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-100"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-100"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001827145694"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002109252119"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -44,16 +44,16 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>ᴀʜʜʜʜʜʜʜ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
 try:
     ADMINS=[2073762128]
-    for x in (os.environ.get("ADMINS", "2073762128").split()):
+    for x in (os.environ.get("ADMINS", "6893079708 6843816361 6804358102 6731240638 6003783733").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴋɪᴛᴀ ᴅᴜʟᴜ ʏᴜᴋ sᴀʏᴀɴɢ,ʙɪᴀʀ ʙɪsᴀ ʟᴀɴᴊᴜᴛ ɴɢᴇʙᴏᴋᴇᴘ 💋.</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>Anda harus join channel agar dapat menggunakan bot‼️. silahkan bergabung kemudian mulai ulang bot 💋.</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @𝑚𝑎𝑑𝑎𝑟𝑎</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>•</b>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
