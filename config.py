@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6973777409:AAFMXAPDxRmdXvRBEtOkOyIaUlTQqEdGM30")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7754829341:AAGCplAKGumbBMez0tDjUShS0bvKydAX-38")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "24213496"))
@@ -22,21 +22,21 @@ API_HASH = os.environ.get("API_HASH", "460587b3c127073be75378abec90ff56")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002035889639"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "@bapakkaosalto")
+OWNER = os.environ.get("OWNER", "@sukasukasuki")
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "6003783733"))
 
 #Port
-PORT = os.environ.get("PORT", "8030")
+PORT = os.environ.get("PORT", "8080")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madara:madara@cluster0.qifw6tx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001827145694"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002109252119"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001938113606"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002058769501"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -44,16 +44,16 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ!! {first}\n\n ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</b>")
 try:
     ADMINS=[2073762128]
-    for x in (os.environ.get("ADMINS", "6893079708 6843816361 6804358102 6731240638 6003783733").split()):
+    for x in (os.environ.get("ADMINS", "6003783733 6893079708").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>Anda harus join channel agar dapat menggunakan bot‼️. silahkan bergabung kemudian mulai ulang bot 💋.</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ᴀɴᴅᴀ ʜᴀʀᴜꜱ ʙᴇʀɢᴀʙᴜɴɢ ᴄʜᴀɴɴᴇʟ ᴅᴀʜᴜʟᴜ ᴀɢᴀʀ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ‼️.\n\nꜱɪʟᴀʜᴋᴀɴ ʙᴇʀɢᴀʙᴜɴɢ ʟᴀʟᴜ ᴍᴜʟᴀɪ ᴜʟᴀɴɢ ʙᴏᴛ💋.</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>ᴊᴏɪɴ ᴠɪᴘ ʙᴇʀʙᴀʏᴀʀ ᴍᴜʀᴀʜ @tyaa86</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>subscribe channel agar dapat update media setiap hari!!</b>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
@@ -62,7 +62,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "ᴊᴏɪɴ ᴠɪᴘ ᴍᴜʀᴀʜ ʙᴀɴɢᴇᴛᴛᴛᴛ!! @tyaa86"
+USER_REPLY_TEXT = "ᴀɴᴅᴀ ʜᴀʀᴜꜱ ʙᴇʀɢᴀʙᴜɴɢ ᴄʜᴀɴɴᴇʟ ᴅᴀʜᴜʟᴜ ᴀɢᴀʀ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ!!"
 
 ADMINS.append(OWNER_ID)
 
